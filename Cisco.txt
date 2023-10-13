@@ -1,7 +1,7 @@
 <공장 초기화>
 mode 버튼을 누른채 전원 on
 
-switch:							=> switch: 상태에서 입력시작
+switch:							            => switch: 상태에서 입력시작
 switch: flash_init              => 플래시 파일 초기화
 switch: delete flash:vlan.dat   => vlan 삭제
 switch: boot                    => 장비 재부팅
