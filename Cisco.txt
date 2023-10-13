@@ -1,0 +1,28 @@
+<공장 초기화>
+mode 버튼을 누른채 전원 on
+
+switch:							=> switch: 상태에서 입력시작
+switch: flash_init              => 플래시 파일 초기화
+switch: delete flash:vlan.dat   => vlan 삭제
+switch: boot                    => 장비 재부팅
+
+<초기화 명령어>
+erase startup-config
+reload
+
+<VLAN 1 IP 설정>
+* 스위치 IP 부여를 통한 관리
+int vlan 1
+ip address IP주소 서브넷마스크
+no shutdown
+
+<오타방지>
+no ip domain-lookup
+
+<이름변경>
+hostname 새이름
+
+<암호설정>
+enable secret 비밀번호
+
+<SSH 엑세스 설정>
